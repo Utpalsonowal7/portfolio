@@ -52,7 +52,7 @@ export default function Navbar() {
                className={`fixed top-0 left-0 w-full z-50 bg-background flex justify-between px-3 items-center sm:px-2 md:px-2 lg:px-36 border-b border-amber-50 shadow-lg transition-all duration-300 ${scrolled ? "py-2 md:py-4" : "py-4"}`}
           >
                <div className={`text-text flex items-center gap-2 `}>
-                    <Image src="/Logo.png" width={32} height={8} alt="logo" />
+                    <Image src="/Logo.png" width={32} height={32} alt="utpal sonowal logo" />
                     <span className={`${sora.className} text-xl font-bold`}>
                          Utpal Sonowal
                     </span>

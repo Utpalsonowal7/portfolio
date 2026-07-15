@@ -15,39 +15,83 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
      metadataBase: new URL("https://utpx.in"),
+
      title: {
-          default: "Utpal Sonowal — Full Stack Developer",
+          default: "Utpal Sonowal | Full Stack Developer",
           template: "%s | Utpal Sonowal",
      },
+
      description:
-          "Portfolio of Utpal Sonowal, a full-stack developer specializing in Next.js, React, and TypeScript.",
+          "Portfolio of Utpal Sonowal, a Full Stack Developer specializing in Next.js, React, TypeScript, Node.js, Express.js, PostgreSQL, and modern web development.",
+
      keywords: [
           "Utpal Sonowal",
-          "full stack developer",
-          "Next.js developer",
-          "React developer",
-          "portfolio",
+          "Full Stack Developer",
+          "Next.js Developer",
+          "React Developer",
+          "TypeScript",
+          "Node.js",
+          "Express.js",
+          "PostgreSQL",
+          "Web Developer",
+          "Portfolio",
      ],
-     authors: [{ name: "Utpal Sonowal" }],
-     openGraph: {
-          title: "Utpal Sonowal — Full Stack Developer",
-          description: "Portfolio showcasing projects, skills, and experience.",
-          url: "https://utpx.in",
-          siteName: "Utpal Sonowal Portfolio",
-          images: [{ url: "/og-image.png", width: 1200, height: 630 }],
-          locale: "en_US",
-          type: "website",
+
+     authors: [
+          {
+               name: "Utpal Sonowal",
+               url: "https://utpx.in",
+          },
+     ],
+
+     creator: "Utpal Sonowal",
+     publisher: "Utpal Sonowal",
+
+     alternates: {
+          canonical: "https://utpx.in",
      },
-     twitter: {
-          card: "summary_large_image",
-          title: "Utpal Sonowal — Full Stack Developer",
-          description: "Portfolio showcasing projects, skills, and experience.",
-          images: ["/og-image.png"],
-     },
+
      robots: {
           index: true,
           follow: true,
+          googleBot: {
+               index: true,
+               follow: true,
+               "max-image-preview": "large",
+               "max-video-preview": -1,
+               "max-snippet": -1,
+          },
      },
+
+     openGraph: {
+          title: "Utpal Sonowal | Full Stack Developer",
+          description:
+               "Explore the portfolio of Utpal Sonowal featuring projects, skills, and experience in full-stack web development.",
+
+          url: "https://utpx.in",
+          siteName: "Utpal Sonowal Portfolio",
+          locale: "en_US",
+          type: "website",
+
+          images: [
+               {
+                    url: "/og-image.png",
+                    width: 1200,
+                    height: 630,
+                    alt: "Utpal Sonowal Portfolio",
+               },
+          ],
+     },
+
+     twitter: {
+          card: "summary_large_image",
+          title: "Utpal Sonowal | Full Stack Developer",
+          description:
+               "Portfolio showcasing projects, skills, and experience in modern web development.",
+          images: ["/og-image.png"],
+     },
+
+     category: "technology",
 };
 
 export default function RootLayout({
@@ -56,11 +100,31 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}<Toaster position="top-center"/></body>
-    </html>
+       <html
+            lang="en"
+            className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+       >
+            <body className="min-h-full flex flex-col">
+                 <script
+                      type="application/ld+json"
+                      dangerouslySetInnerHTML={{
+                           __html: JSON.stringify({
+                                "@context": "https://schema.org",
+                                "@type": "Person",
+                                name: "Utpal Sonowal",
+                                url: "https://utpx.in",
+                                image: "https://utpx.in/og-image.png",
+                                jobTitle: "Full Stack Developer",
+                                sameAs: [
+                                     "https://github.com/YOUR_GITHUB",
+                                     "https://linkedin.com/in/YOUR_LINKEDIN",
+                                ],
+                           }),
+                      }}
+                 />
+                 {children}
+                 <Toaster position="top-center" />
+            </body>
+       </html>
   );
 }
