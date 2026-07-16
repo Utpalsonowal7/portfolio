@@ -24,6 +24,28 @@ export const metadata: Metadata = {
      description:
           "Utpal Sonowal, a Full Stack Developer specializing in Next.js, React, TypeScript, Node.js, Express.js, PostgreSQL, and modern web development.",
 
+     icons: {
+          icon: [
+               {
+                    url: "/favicon.ico",
+                    type: "image/x-icon",
+               },
+               {
+                    url: "/icon.png",
+                    type: "image/png",
+                    sizes: "256x256",
+               },
+          ],
+          apple: [
+               {
+                    url: "/apple-icon.png",
+                    sizes: "180x180",
+                    type: "image/png",
+               },
+          ],
+          shortcut: "/favicon.ico",
+     },
+
      keywords: [
           "Utpal Sonowal",
           "Full Stack Developer",
@@ -118,8 +140,8 @@ export default function RootLayout({
                                 image: "https://utpx.in/og-image.png",
                                 jobTitle: "Full Stack Developer",
                                 sameAs: [
-                                     "https://github.com/YOUR_GITHUB",
-                                     "https://linkedin.com/in/YOUR_LINKEDIN",
+                                     "https://github.com/Utpalsonowal7",
+                                     "https://www.linkedin.com/in/utpal-sonowal/",
                                 ],
                            }),
                       }}
