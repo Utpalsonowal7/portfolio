@@ -83,7 +83,7 @@ export default function Hero() {
                               rel="noopener noreferrer"
                               className="border-2 rounded bg-background p-3"
                          >
-                              <FaLinkedin className="w-5 h-5" />
+                              <FaLinkedin  />
                          </a>
                          <a
                               href="https://x.com/UtpalSo95273383"
