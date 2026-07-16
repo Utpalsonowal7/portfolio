@@ -22,13 +22,15 @@ export const metadata: Metadata = {
      },
 
      description:
-          "Portfolio of Utpal Sonowal, a Full Stack Developer specializing in Next.js, React, TypeScript, Node.js, Express.js, PostgreSQL, and modern web development.",
+          "Utpal Sonowal, a Full Stack Developer specializing in Next.js, React, TypeScript, Node.js, Express.js, PostgreSQL, and modern web development.",
 
      keywords: [
           "Utpal Sonowal",
           "Full Stack Developer",
+          "Backend Developer",
           "Next.js Developer",
           "React Developer",
+          "Developer",
           "TypeScript",
           "Node.js",
           "Express.js",
