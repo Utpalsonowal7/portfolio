@@ -34,7 +34,7 @@ export default function Navbar() {
      }, []);
 
      const handleDownload = async () => {
-          const res = await fetch("/Resume.docx");
+          const res = await fetch("/Utpal_Sonowal_Resume.pdf");
           const blob = await res.blob();
 
           const url = window.URL.createObjectURL(blob);

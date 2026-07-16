@@ -10,6 +10,7 @@ import {
   FaDocker,
   FaBootstrap,
   FaPhp,
+  FaLaravel
 } from "react-icons/fa";
 
 import {
@@ -44,6 +45,7 @@ export const skills = [
   { name: "Node.js", icon: FaNodeJs, category: "Backend" },
   { name: "Express.js", icon: SiExpress, category: "Backend" },
   { name: "PHP", icon: FaPhp, category: "Backend" },
+  { name: "Laravel", icon: FaLaravel, category: "Backend" },
   { name: "JWT", icon: SiJsonwebtokens, category: "Backend" },
   { name: "Zod", icon: SiZod, category: "Backend" },
 
