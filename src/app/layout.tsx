@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
      metadataBase: new URL("https://utpx.in"),
 
+
+     applicationName:"Utpal Sonowal",
+
      title: {
           default: "Utpal Sonowal | Full Stack Developer",
           template: "%s | Utpal Sonowal",
@@ -93,7 +96,7 @@ export const metadata: Metadata = {
                "Explore the portfolio of Utpal Sonowal featuring projects, skills, and experience in full-stack web development.",
 
           url: "https://utpx.in",
-          siteName: "Utpal Sonowal Portfolio",
+          siteName: "Utpal Sonowal",
           locale: "en_US",
           type: "website",
 
@@ -129,23 +132,38 @@ export default function RootLayout({
             className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
        >
             <body className="min-h-full flex flex-col">
-                 <script
-                      type="application/ld+json"
-                      dangerouslySetInnerHTML={{
-                           __html: JSON.stringify({
-                                "@context": "https://schema.org",
-                                "@type": "Person",
-                                name: "Utpal Sonowal",
-                                url: "https://utpx.in",
-                                image: "https://utpx.in/og-image.png",
-                                jobTitle: "Full Stack Developer",
-                                sameAs: [
-                                     "https://github.com/Utpalsonowal7",
-                                     "https://www.linkedin.com/in/utpal-sonowal/",
-                                ],
-                           }),
-                      }}
-                 />
+                 <>
+                      <script
+                           type="application/ld+json"
+                           dangerouslySetInnerHTML={{
+                                __html: JSON.stringify({
+                                     "@context": "https://schema.org",
+                                     "@type": "Person",
+                                     name: "Utpal Sonowal",
+                                     url: "https://utpx.in",
+                                     image: "https://utpx.in/og-image.png",
+                                     jobTitle: "Full Stack Developer",
+                                     sameAs: [
+                                          "https://github.com/Utpalsonowal7",
+                                          "https://www.linkedin.com/in/utpal-sonowal/",
+                                     ],
+                                }),
+                           }}
+                      />
+
+                      <script
+                           type="application/ld+json"
+                           dangerouslySetInnerHTML={{
+                                __html: JSON.stringify({
+                                     "@context": "https://schema.org",
+                                     "@type": "WebSite",
+                                     url: "https://utpx.in",
+                                     name: "Utpal Sonowal",
+                                     alternateName: "UTPX",
+                                }),
+                           }}
+                      />
+                 </>
                  {children}
                  <Toaster position="top-center" />
             </body>

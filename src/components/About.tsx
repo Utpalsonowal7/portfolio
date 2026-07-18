@@ -33,7 +33,7 @@ export default function About() {
                                    <span>
                                         <Info size={20}/>
                                    </span>
-                                   About <span className="font-bold">Me</span>
+                                   About <span className="font-bold">Utpal Sonowal</span>
                               </h1>
                          </div>
 
