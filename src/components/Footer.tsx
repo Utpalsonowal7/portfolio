@@ -33,6 +33,14 @@ export default function Footer() {
                               rights reserved
                          </p>
                     </div>
+                    <div
+                         className={`${sora.className} text-sm text-gray-400 flex items-center`}
+                    >
+                         Design :&nbsp;
+                         <a href="https://www.figma.com/@jhanvishah" target="_blank">
+                              @Jhanvi Shah| Free Figma Community.
+                         </a>
+                    </div>
                </div>
                <div className="bottom-6 right-6 animate-float">
                     <a
