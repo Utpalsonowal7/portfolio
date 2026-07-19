@@ -38,7 +38,7 @@ export default function Footer() {
                     >
                          Design :&nbsp;
                          <a href="https://www.figma.com/@jhanvishah" target="_blank">
-                              @Jhanvi Shah| Free Figma Community.
+                              Jhanvi Shah| @Figma.
                          </a>
                     </div>
                </div>
