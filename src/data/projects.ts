@@ -1,12 +1,12 @@
 export const projects = [
      {
-          title: "Snip - URL Shortener",
+          title: "LnkShrt - Next Gen URL Shortener",
           description:
                "A full-stack URL shortener that allows users to create, manage, and track shortened links with analytics.",
           image: "/urlProject.png",
-          live: "https://snip.utpx.in",
+          live: "https://app.utpx.in",
           github: "https://github.com/Utpalsonowal7/link-shortner-backend",
-          technologies: ["React", "Node.js", "Express", "Postgres", "Redis"],
+          technologies: ["Node.js", "Express", "Postgres", "Redis", "Typescript","NextJs"],
      },
      
 ];
