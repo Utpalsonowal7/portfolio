@@ -1,4 +1,6 @@
-import { Download } from "lucide-react";
+'use client';
+
+import { MdOutlineFileDownload } from "react-icons/md";
 import { Sora } from "next/font/google";
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
@@ -109,17 +111,14 @@ export default function Hero() {
                               <FaSquareXTwitter />
                          </a>
 
-                         <div className="flex justify-center border-t border-foreground/10 pt-4 md:hidden">
-                              <div className="flex bg-foreground gap-1 py-2.5 px-4 rounded cursor-pointer">
-                                   <button
-                                        className={`${sora.className} text-background font-semibold cursor-pointer`}
-                                        onClick={handleDownload}
-                                   >
-                                        Resume
-                                   </button>
-                                   <Download className="w-5 text-background" />
-                              </div>
-                         </div>
+                         <a
+                              href="/Utpal_Sonowal_Resume.pdf"
+                              download="UtpalsResume.pdf"
+                              className=" sm:hidden border-2 rounded bg-background px-2 py-1 flex justify-center gap-1"
+                         >
+                              <span>Download resume</span>
+                              <MdOutlineFileDownload className="mt-1.5" />
+                         </a>
                     </div>
                </div>
           </section>
