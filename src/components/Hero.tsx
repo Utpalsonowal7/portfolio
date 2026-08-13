@@ -12,20 +12,7 @@ const sora = Sora({
 
 export default function Hero() {
 
-     const handleDownload = async () => {
-          const res = await fetch("/Utpal_Sonowal_Resume.pdf");
-          const blob = await res.blob();
-
-          const url = window.URL.createObjectURL(blob);
-
-          const link = document.createElement("a");
-          link.href = url;
-          link.download = "UtpalsResume.pdf";
-          link.click();
-
-          window.URL.revokeObjectURL(url);
-     };
-
+    
      return (
           <section
                className="flex flex-col  px-3 py-2 md:flex-row-reverse md:justify-between md:items-center md:gap-0 md:px-36 md:py-4"
@@ -114,10 +101,9 @@ export default function Hero() {
                          <a
                               href="/Utpal_Sonowal_Resume.pdf"
                               download="UtpalsResume.pdf"
-                              className=" sm:hidden border-2 rounded bg-background px-2 py-1 flex justify-center gap-1"
+                              className=" sm:hidden border-2 rounded bg-background p-3"
                          >
-                              <span>Download resume</span>
-                              <MdOutlineFileDownload className="mt-1.5" />
+                              <MdOutlineFileDownload />
                          </a>
                     </div>
                </div>
