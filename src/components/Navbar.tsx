@@ -41,7 +41,7 @@ export default function Navbar() {
 
           const link = document.createElement("a");
           link.href = url;
-          link.download = "UtpalsResume";
+          link.download = "UtpalsResume.pdf";
           link.click();
 
           window.URL.revokeObjectURL(url);

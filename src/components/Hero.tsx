@@ -1,3 +1,4 @@
+import { Download } from "lucide-react";
 import { Sora } from "next/font/google";
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
@@ -8,6 +9,21 @@ const sora = Sora({
 });
 
 export default function Hero() {
+
+     const handleDownload = async () => {
+          const res = await fetch("/Utpal_Sonowal_Resume.pdf");
+          const blob = await res.blob();
+
+          const url = window.URL.createObjectURL(blob);
+
+          const link = document.createElement("a");
+          link.href = url;
+          link.download = "UtpalsResume.pdf";
+          link.click();
+
+          window.URL.revokeObjectURL(url);
+     };
+
      return (
           <section
                className="flex flex-col  px-3 py-2 md:flex-row-reverse md:justify-between md:items-center md:gap-0 md:px-36 md:py-4"
@@ -58,13 +74,12 @@ export default function Hero() {
                               Based in <span className="font-bold">India.</span>
                          </h1>
 
-                         <p
-                              className={`${sora.className}  max-w-xl`}
-                         >
+                         <p className={`${sora.className}  max-w-xl`}>
                               A full stack developer who enjoy break down
-                              complex ideas into reality and build fast, scalable,
-                              and modern web applications using Next.js, React,
-                              TypeScript, Node.js, Express.js, and PostgreSQL.
+                              complex ideas into reality and build fast,
+                              scalable, and modern web applications using
+                              Next.js, React, TypeScript, Node.js, Express.js,
+                              and PostgreSQL.
                          </p>
                     </div>
 
@@ -83,7 +98,7 @@ export default function Hero() {
                               rel="noopener noreferrer"
                               className="border-2 rounded bg-background p-3"
                          >
-                              <FaLinkedin  />
+                              <FaLinkedin />
                          </a>
                          <a
                               href="https://x.com/UtpalSo95273383"
@@ -93,6 +108,18 @@ export default function Hero() {
                          >
                               <FaSquareXTwitter />
                          </a>
+
+                         <div className="flex justify-center border-t border-foreground/10 pt-4 md:hidden">
+                              <div className="flex bg-foreground gap-1 py-2.5 px-4 rounded cursor-pointer">
+                                   <button
+                                        className={`${sora.className} text-background font-semibold cursor-pointer`}
+                                        onClick={handleDownload}
+                                   >
+                                        Resume
+                                   </button>
+                                   <Download className="w-5 text-background" />
+                              </div>
+                         </div>
                     </div>
                </div>
           </section>
