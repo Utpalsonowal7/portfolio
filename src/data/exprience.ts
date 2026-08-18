@@ -5,7 +5,7 @@ export const exprience = [
           name: "National Informatics Centre (NIC)",
           type: "Internship",
           role:"Full Stack Developer",
-          duration: "Mar 2025 - Jul 2025",
+          duration: "Jan 2025 - Dec 2025",
           keyAchievement: [
                "Developed a role-based Warehouse Management System for district-level food distribution using PHP, PostgreSQL, JavaScript, and Bootstrap.",
                "Implemented secure authentication, CRUD operations, and warehouse-to-wholesaler/retailer mapping with automated transport cost calculations.",
