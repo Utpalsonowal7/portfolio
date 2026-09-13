@@ -18,7 +18,7 @@ export const projects = [
      {
           title: "The Moment Studio",
           description:
-               "The website focuses on creating a premium visual experience while keeping the interface clean, responsive, and easy to navigate. It includes a photography-focused hero section, services, gallery, pricing packages, client testimonials, FAQs, contact CTA, and a complete footer.",
+               "The website focuses on creating a premium visual experience while keeping the interface clean, responsive, and easy to navigate.",
           image: "/project2.png",
           live: "https://the-moment-studio.vercel.app/",
           github: "https://github.com/Utpalsonowal7/The-Moment-Studio",
