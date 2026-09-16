@@ -62,7 +62,7 @@ export default function Skills() {
                                    key={key}
                                    className="flex flex-col items-center gap-3 rounded-xl border-2 border-black p-4 md:p-6 transition-all hover:-translate-y-1 shadow-md hover:shadow-xl cursor-pointer"
                               >
-                                   <Icon size={48} />
+                                   <Icon size={45} />
                                    <p
                                         className={`${sora.className} font-semibold`}
                                    >
