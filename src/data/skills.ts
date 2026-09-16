@@ -39,6 +39,7 @@ import {
      SiShadcnui,
      SiFastapi,
      SiGooglegemini,
+     SiMysql,
 } from "react-icons/si";
 
 import { MdSecurity } from "react-icons/md";
@@ -78,12 +79,12 @@ export const skills = [
      { name: "PostgreSQL", icon: SiPostgresql, category: "Database" },
      { name: "Prisma", icon: SiPrisma, category: "Database" },
      { name: "Redis", icon: SiRedis, category: "Database" },
-     { name: "SQL", icon: FaDatabase, category: "Database" },
+     { name: "Mysql", icon: SiMysql, category: "Database" },
 
      { name: "LLMs", icon: FaRobot, category: "AI/ML" },
      { name: "Gemini API", icon: SiGooglegemini, category: "AI/ML" },
      { name: "RAG", icon: FaRobot, category: "AI/ML" },
-     { name: "Vector Databases", icon: null, category: "AI/ML" },
+     { name: "Vector Databases", icon: FaDatabase, category: "AI/ML" },
 
      { name: "Docker", icon: FaDocker, category: "DevOps" },
      { name: "Git", icon: FaGitAlt, category: "DevOps" },
