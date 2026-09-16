@@ -62,6 +62,7 @@ export const skills = [
 
      { name: "Node.js", icon: FaNodeJs, category: "Backend" },
      { name: "Express.js", icon: SiExpress, category: "Backend" },
+     { name: "FastApi", icon: SiFastapi, category: "Backend" },
      { name: "PHP", icon: FaPhp, category: "Backend" },
      { name: "Laravel", icon: FaLaravel, category: "Backend" },
      { name: "JWT", icon: SiJsonwebtokens, category: "Backend" },
