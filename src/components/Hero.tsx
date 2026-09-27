@@ -64,11 +64,8 @@ export default function Hero() {
                          </h1>
 
                          <p className={`${sora.className}  max-w-xl`}>
-                              A full stack developer who enjoy break down
-                              complex ideas into reality and build fast,
-                              scalable, and modern web applications using
-                              Next.js, React, TypeScript, Node.js, Express.js,
-                              and PostgreSQL.
+                              A full-stack developer who enjoys turning complex ideas into reality and building fast, scalable, and modern web applications using Next.js, React, TypeScript, Node.js, Express.js, and PostgreSQL. Passionate about building intelligent applications with AI and RAG while solving real-world problems through clean, reliable engineering.
+
                          </p>
                     </div>
 
