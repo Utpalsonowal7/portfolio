@@ -22,11 +22,15 @@ export const projects = [
           image: "/project2.png",
           live: "https://the-moment-studio.vercel.app/",
           github: "https://github.com/Utpalsonowal7/The-Moment-Studio",
-          technologies: [
-               "Next.js",
-               "React",
-               "TypeScript",
-               "Tailwind CSS"
-          ],
+          technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+     },
+     {
+          title: "Study Buddy — Full-Stack RAG Chatbot with Production-Grade Authentication ",
+          description:
+               "Full-stack study assistant with document-based RAG, cited AI answers, streaming chat, and production-grade authentication. Project overview with links to frontend and backend repositories.",
+          image: "/project3.png",
+          live: "https://studybuddy.utpx.in/",
+          github: "https://github.com/Utpalsonowal7/study-buddy",
+          technologies: ["FastAPI", "PostgreSQL", "RAG", "React", "TypeScript"],
      },
 ];
