@@ -227,12 +227,14 @@ export default function Contact() {
                                         </a>
                                         <a
                                              href="https://github.com/Utpalsonowal7"
+                                             target="_blank"
                                              className="border border-gray-300 shadow-lg px-3 py-2.5 rounded"
                                         >
                                              <FaGithub size={15} />
                                         </a>
                                         <a
                                              href="https://www.linkedin.com/in/utpal-sonowal/"
+                                             target="_blank"
                                              className="border border-gray-300 shadow-lg px-3 py-2.5 rounded"
                                         >
                                              <FaLinkedin size={15} />
